@@ -40,11 +40,12 @@ export default function Nav() {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+        className="fixed top-0 left-0 right-0 transition-all duration-500"
         style={{
           background: scrolled ? 'rgba(5,8,16,0.88)' : 'transparent',
           backdropFilter: scrolled ? 'blur(24px) saturate(160%)' : 'none',
           borderBottom: scrolled ? '1px solid rgba(26,39,64,0.9)' : '1px solid transparent',
+          zIndex: 10000,
         }}
       >
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -130,11 +131,12 @@ export default function Nav() {
       {/* Mobile menu */}
       <div
         id="mobile-menu"
-        className="fixed top-16 left-0 right-0 z-40 md:hidden transition-all duration-300"
+        className="fixed top-16 left-0 right-0 md:hidden transition-all duration-300"
         style={{
           background: 'rgba(5,8,16,0.97)',
           backdropFilter: 'blur(24px)',
           borderBottom: '1px solid var(--border)',
+          zIndex: 10000,
           maxHeight: menuOpen ? '400px' : '0',
           overflow: 'hidden',
         }}

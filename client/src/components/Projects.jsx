@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { GlowOrb, SectionBadge, SectionTitle, useReveal, MeshBg } from './Shared'
 
 const typeStyles = {
@@ -30,10 +31,10 @@ function ProjectModal({ project, onClose }) {
 
   const pill = typeStyles[project.type] || typeStyles['Backend']
 
-  return (
+  return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4"
-      style={{ background: 'rgba(5,8,16,0.9)', backdropFilter: 'blur(16px)' }}
+      className="fixed inset-0 flex items-center justify-center p-3 sm:p-4"
+      style={{ background: 'rgba(5,8,16,0.92)', backdropFilter: 'blur(20px)', zIndex: 9999 }}
       onClick={onClose}
     >
       <div
@@ -143,7 +144,8 @@ function ProjectModal({ project, onClose }) {
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 

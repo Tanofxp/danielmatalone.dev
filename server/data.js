@@ -230,7 +230,7 @@ export const portfolioData = {
       "live": "https://apps.moron.gob.ar/portal_tasas"
     },
     {
-      "id": 4,
+      "id": 12,
       "title": "Portal de Proveedores",
       "desc": "Autogestión de proveedores municipales: alta, validación CUIT, actualización de email con token, adjuntos y consulta de pagos.",
       "type": "Full Stack",
@@ -245,7 +245,7 @@ export const portfolioData = {
       "color": "#38c5d9"
     },
     {
-      "id": 5,
+      "id": 13,
       "title": "Sistema de Permisos (Alfa)",
       "desc": "Administración de usuarios y permisos granulares para todas las apps municipales. Auth LDAP corporativo y reportes JasperReports.",
       "type": "Backend",
@@ -259,7 +259,7 @@ export const portfolioData = {
       "color": "#b07ef7"
     },
     {
-      "id": 1,
+      "id": 14,
       "title": "API Gateway Municipal",
       "desc": "API REST Laravel que centraliza expedientes, personas, RRHH y GIS con autenticación dual LDAP + JWT.",
       "type": "Microservicios",

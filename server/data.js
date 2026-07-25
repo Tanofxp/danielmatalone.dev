@@ -140,7 +140,8 @@ export const portfolioData = {
       category: "personal",
       stack: ["React", "Vite", "Node.js", "Express", "Tailwind CSS"],
       color: "#4f8ef7",
-      github: "https://github.com/Tanofxp/danielmatalone.dev"
+      github: "https://github.com/Tanofxp/danielmatalone.dev",
+      live: "https://danielmatalone-dev.vercel.app/"
     },
     {
       id: 5,

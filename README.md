@@ -1,6 +1,6 @@
 # danielmatalone.dev
 
-Portfolio profesional de **Daniel Luciano Matalone** — Full Stack Developer · Buenos Aires, AR
+Portfolio profesional de **Daniel Luciano Matalone** — Full Stack Developer · Aveiro, Portugal
 
 ## Stack
 

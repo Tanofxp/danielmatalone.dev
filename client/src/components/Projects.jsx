@@ -11,8 +11,9 @@ const typeStyles = {
 }
 
 const filters = [
-  { key: 'all',      label: 'Todos',    icon: '◈' },
-  { key: 'personal', label: 'Personal', icon: '🚀' },
+  { key: 'all',          label: 'Todos',        icon: '◈'  },
+  { key: 'professional', label: 'Profesional',  icon: '💼' },
+  { key: 'personal',     label: 'Personal',     icon: '🚀' },
 ]
 
 /* Modal de detalle de proyecto */
@@ -316,9 +317,9 @@ export default function Projects({ projects }) {
   const [filter, setFilter] = useState('all')
   if (!projects?.length) return null
 
-  const visible   = filter === 'all' ? projects : projects.filter(p => p.category === filter)
-  const municipal = visible.filter(p => p.category === 'municipal')
-  const personal  = visible.filter(p => p.category === 'personal')
+  const visible      = filter === 'all' ? projects : projects.filter(p => p.category === filter)
+  const professional = visible.filter(p => p.category === 'professional')
+  const personal     = visible.filter(p => p.category === 'personal')
 
   return (
     <section id="proyectos" className="relative py-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto overflow-hidden">
@@ -360,80 +361,22 @@ export default function Projects({ projects }) {
         </div>
       </div>
 
-      {/* Sector Público */}
-      {(filter === 'all' || filter === 'municipal') && municipal.length > 0 && (
+      {/* Profesionales */}
+      {(filter === 'all' || filter === 'professional') && professional.length > 0 && (
         <>
-          {/* Pill solo para el bloque municipal */}
-          <div className="relative z-10 mb-5">
-            <span
-              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border"
-              style={{
-                color: 'var(--green)',
-                background: 'rgba(61,214,140,0.07)',
-                borderColor: 'rgba(61,214,140,0.25)',
-              }}
-            >
-              <span className="relative flex h-2 w-2 flex-shrink-0">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ background: 'var(--green)' }} />
-                <span className="relative inline-flex rounded-full h-2 w-2" style={{ background: 'var(--green)' }} />
-              </span>
-              Aplicaciones en Producción
-            </span>
-          </div>
-
-          {/* Banner municipal mejorado */}
-          <div
-            className="relative z-10 rounded-2xl border overflow-hidden mb-8"
-            style={{
-              background: 'var(--surface)',
-              borderColor: 'var(--border2)',
-              borderLeft: '3px solid var(--brand)',
-              boxShadow: '0 0 40px rgba(79,142,247,0.06)',
-            }}
-          >
-            <div className="pointer-events-none absolute inset-0 opacity-[0.04]"
-              style={{ background: 'linear-gradient(135deg, var(--brand), var(--brand2))' }} />
-            {/* Scan line decorativa */}
-            <span className="scan-overlay" />
-
-            <div className="relative p-5 flex items-start gap-4">
-              <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl flex-shrink-0"
-                style={{ background: 'rgba(79,142,247,0.1)', border: '1px solid rgba(79,142,247,0.2)' }}
-              >
-                🏛️
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="text-sm font-bold mb-1.5" style={{ color: 'var(--text)' }}>
-                  Municipalidad de Morón — Ecosistema completo en producción
-                </h3>
-                <p className="text-xs leading-relaxed mb-3" style={{ color: 'var(--muted)' }}>
-                  Diseñé, desarrollé y mantuve un conjunto de sistemas web y microservicios que opera
-                  en producción para miles de vecinos y proveedores. El ecosistema cubre Oracle,
-                  Provincia.Net, Interbanking y portales de autogestión modernos.
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {['PHP/Laravel','SQL Server','MySQL','Oracle','Docker','LDAP','JWT'].map(t => (
-                    <span key={t} className="code-chip">{t}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
           <p
             className="relative z-10 text-xs font-bold uppercase tracking-widest mb-5 pb-3 border-b flex items-center gap-2"
             style={{ color: 'var(--muted)', borderColor: 'var(--border)' }}
           >
             <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--brand)' }} />
-            Sector Público — Municipalidad de Morón
+            Experiencia Profesional
             <span className="ml-auto text-[10px] px-2 py-0.5 rounded-full border"
               style={{ borderColor: 'var(--border2)', color: 'var(--muted)' }}>
-              {municipal.length} sistemas
+              {professional.length} proyectos
             </span>
           </p>
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
-            {municipal.map((p, i) => <ProjectCard key={p.id} project={p} index={i} />)}
+            {professional.map((p, i) => <ProjectCard key={p.id} project={p} index={i} />)}
           </div>
         </>
       )}

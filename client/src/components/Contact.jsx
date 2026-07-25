@@ -211,7 +211,7 @@ export default function Contact({ data }) {
               </div>
               <div>
                 <div className="text-sm font-bold" style={{ color: 'var(--green)' }}>Disponible ahora</div>
-                <div className="text-xs" style={{ color: 'var(--muted)' }}>Buenos Aires, Argentina</div>
+                <div className="text-xs" style={{ color: 'var(--muted)' }}>Aveiro, Portugal</div>
               </div>
             </div>
 

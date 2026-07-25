@@ -181,7 +181,7 @@ function BioParagraph({ text, keywords }) {
 }
 
 const bioKeywords = [
-  ['Full Stack', 'Buenos Aires', 'React', 'Node.js', 'TypeScript'],
+  ['Full Stack', 'Aveiro', 'React', 'Node.js', 'TypeScript'],
   ['APIs REST', 'bases de datos relacionales', 'código', 'arquitectura'],
   ['proyectos propios', 'código limpio', 'colaboración'],
 ]

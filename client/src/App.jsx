@@ -167,7 +167,7 @@ export default function App() {
                 <div className="text-sm font-bold" style={{ color: 'var(--text)' }}>
                   dev<span className="gradient-text">daniel</span>
                 </div>
-                <div className="text-xs" style={{ color: 'var(--muted)' }}>Full Stack Developer · Buenos Aires</div>
+                <div className="text-xs" style={{ color: 'var(--muted)' }}>Full Stack Developer · Aveiro, Portugal</div>
               </div>
             </div>
 

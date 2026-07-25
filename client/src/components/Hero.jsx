@@ -2,26 +2,26 @@ import { useState, useEffect, useRef } from 'react'
 import { GlowOrb, DotGrid, TerminalWindow, MeshBg } from './Shared'
 
 const langDots = [
-  { color: '#f7b155', label: 'JavaScript'    },
-  { color: '#38c5d9', label: 'React'         },
-  { color: '#3dd68c', label: 'Node.js'       },
-  { color: '#4f8ef7', label: 'TypeScript'    },
-  { color: '#b07ef7', label: 'MySQL · PostgreSQL'},
-  { color: '#f76f6f', label: 'REST APIs'     },
+  { color: '#f7b155', label: 'JavaScript'      },
+  { color: '#38c5d9', label: 'React'           },
+  { color: '#3dd68c', label: 'Node.js'         },
+  { color: '#4f8ef7', label: 'TypeScript'      },
+  { color: '#b07ef7', label: 'PHP · Laravel'   },
+  { color: '#f76f6f', label: 'Python · pandas' },
 ]
 
 const terminalLines = [
   { prompt: true, cmd: 'whoami' },
-  { out: 'Full Stack Developer · Buenos Aires, AR' },
+  { out: 'Full Stack Developer · Aveiro, PT' },
   { prompt: true, cmd: 'cat stack.json' },
   { key: '"backend"',  sep: ':',  str: '"Node.js, Express, TypeScript"' },
-  { key: '"frontend"', sep: ':',  str: '"React, Vite, Tailwind CSS"'    },
-  { key: '"db"',       sep: ':',  str: '"MySQL, PostgreSQL, MongoDB"'    },
-  { key: '"infra"',    sep: ':',  str: '"Docker, Vercel, GitHub"'        },
+  { key: '"frontend"', sep: ':',  str: '"React, TypeScript, Vite"'      },
+  { key: '"mobile"',   sep: ':',  str: '"React Native, Geolocalización"' },
+  { key: '"infra"',    sep: ':',  str: '"Vercel, GitHub, Docker"'        },
   { prompt: true, cmd: 'git log --oneline -3' },
-  { val: 'a3f2d1c', out: ' feat: portfolio personal' },
-  { val: 'b8e5c9a', out: ' feat: api rest con jwt'   },
-  { val: 'c1d7f4e', out: ' feat: app fullstack react' },
+  { val: 'a3f2d1c', out: ' feat: danielmatalone.dev portfolio'   },
+  { val: 'b8e5c9a', out: ' feat: api-node jwt + crud'            },
+  { val: 'c1d7f4e', out: ' feat: foto_map geolocalización'       },
 ]
 
 const COLORS = ['#4f8ef7','#7c5cf7','#38c5d9','#3dd68c','#b07ef7','#f7b155','#f76f6f']
@@ -401,10 +401,10 @@ export default function Hero({ data }) {
 
           {/* Métricas */}
           <div className="grid grid-cols-2 gap-3">
-            <LiveMetric icon="📦" label="Repos públicos" value="8+"  color="#4f8ef7" />
-            <LiveMetric icon="⚛️" label="Frontend"       value="React" color="#38c5d9" />
-            <LiveMetric icon="⚙️" label="Backend"        value="Node" color="#3dd68c" />
-            <LiveMetric icon="⏱️" label="Años exp."      value="3+"  color="#b07ef7" />
+            <LiveMetric icon="📦" label="Proyectos"   value="8+"  color="#4f8ef7" />
+            <LiveMetric icon="🐘" label="PHP/Laravel" value="✓"   color="#b07ef7" />
+            <LiveMetric icon="🐍" label="Python"      value="✓"   color="#f7b155" />
+            <LiveMetric icon="⏱️" label="Años exp."   value="4+"  color="#3dd68c" />
           </div>
         </div>
 

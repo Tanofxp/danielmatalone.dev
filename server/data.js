@@ -4,7 +4,7 @@ export const portfolioData = {
     role: "Full Stack Developer",
     location: "Aveiro, Portugal",
     github: "https://github.com/Tanofxp",
-    email: "daniel.matalone@gmail.com",
+    email: "danifxp@gmail.com",
     linkedin: "https://www.linkedin.com/in/daniel-matalone-a09b9214a/",
     bio: [
       "Soy Daniel Matalone, desarrollador Full Stack con base en Aveiro, Portugal. Me especializo en construir aplicaciones web y móviles completas, desde APIs robustas hasta interfaces modernas y responsivas. Me muevo con comodidad en JavaScript, TypeScript y PHP: React, Node.js, Express y Laravel son parte de mi día a día.",

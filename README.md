@@ -7,7 +7,7 @@
 Building modern web applications with React, Next.js, TypeScript and Node.js.
 
 <p>
-  <a href="https://danielmatalone.dev">Website</a> •
+  <a href="https://danielmatalone-dev.vercel.app/">Website</a> •
   <a href="https://github.com/Tanofxp">GitHub</a> •
   <a href="https://www.linkedin.com/in/daniel-matalone-a09b9214a/">LinkedIn</a>
 </p>
@@ -221,7 +221,7 @@ https://github.com/Tanofxp
 
 🌐 Portfolio
 
-https://danielmatalone.dev
+https://danielmatalone-dev.vercel.app/
 
 ---
 
